@@ -6,7 +6,7 @@ let socket = require("socket.io");
 
 let app = express();
 
-let port = 3000;
+let port = process.env.PORT || 3000; //port given by heroku or local
 
 let server = app.listen(port);
 
