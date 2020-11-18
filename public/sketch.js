@@ -7,8 +7,26 @@ socket.on('mouseBroadcast', drawOtherMouse);
 
 socket.on("color", setColor);
 
+socket.on("newPlayer", newPlayer);
+
+function newPlayer(newPlayerColor){
+  console.log(newPlayerColor)
+
+  fill('purple')
+  rectMode(CENTER,CENTER);
+  noStroke()
+  rect(width/2,height/2,400,40)
+push()
+  fill(newPlayerColor)
+  textSize(30);
+  textAlign(CENTER,CENTER)
+  text('New player joined: '+ newPlayerColor, width/2,height/2)
+  pop()
+}
+
 function setColor(assignedColor){
   myColor=assignedColor;
+
 }
 
 function newConnection(){
