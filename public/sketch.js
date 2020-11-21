@@ -54,7 +54,8 @@ function draw() {
   // put drawing code here
 }
 
-function mousePressed(){
+function mouseMoved(){
+  if(mouseIsPressed){
   push()
   noStroke()
   fill(myColor);
@@ -64,7 +65,7 @@ function mousePressed(){
   let message= {
   x: mouseX,
   y: mouseY,
-  color: myColor,
+  color: myColor,}
 };
 
 socket.emit("mouse", message);
