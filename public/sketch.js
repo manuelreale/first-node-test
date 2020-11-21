@@ -52,6 +52,8 @@ function setup() {
 
 function draw() {
   push()
+  noStroke()
+  rectMode(CORNER)
   fill(myColor)
   square(0,height-50,50)
   pop()
