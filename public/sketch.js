@@ -58,7 +58,7 @@ function mouseMoved(){
   push()
   noStroke()
   fill(myColor);
-  ellipse(mouseX,mouseY, 20);
+  square(mouseX,mouseY, 20);
   pop()
 
   let message= {
