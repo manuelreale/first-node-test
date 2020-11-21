@@ -58,7 +58,7 @@ function mouseMoved(){
   push()
   noStroke()
   fill(myColor);
-  square(5*ceil(mouseX/5),5*ceil(mouseY/5), 5);
+  square(10*ceil(mouseX/10),10*ceil(mouseY/10), 10);
   pop()
 
   let message= {
