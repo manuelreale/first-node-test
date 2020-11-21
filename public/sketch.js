@@ -47,7 +47,7 @@ function preload(){
 function setup() {
   createCanvas(windowWidth,windowHeight)
   // put setup code here
-  background('purple')
+  background('white')
 }
 
 function draw() {
@@ -66,7 +66,21 @@ function mouseDragged(){
   y: mouseY,
   color: myColor,
 };
-
 socket.emit("mouse", message);
+}
 
+
+function mouseClicked(){
+  push()
+  noStroke()
+  fill(myColor);
+  square(10*floor(mouseX/10),10*floor(mouseY/10), 10);
+  pop()
+
+  let message= {
+  x: mouseX,
+  y: mouseY,
+  color: myColor,
+};
+socket.emit("mouse", message);
 }
