@@ -65,9 +65,9 @@ function mouseMoved(){
   let message= {
   x: mouseX,
   y: mouseY,
-  color: myColor,}
+  color: myColor,
 };
 
 socket.emit("mouse", message);
-
+}
 }
