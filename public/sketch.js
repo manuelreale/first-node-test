@@ -51,6 +51,10 @@ function setup() {
 }
 
 function draw() {
+  push()
+  fill(myColor)
+  square(0,height-50,50)
+  pop()
   // put drawing code here
 }
 
