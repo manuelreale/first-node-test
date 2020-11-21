@@ -54,7 +54,7 @@ function draw() {
   // put drawing code here
 }
 
-function mouseMoved(){
+function mouseClicked(){
   push()
   noStroke()
   fill(myColor);
