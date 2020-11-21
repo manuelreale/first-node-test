@@ -36,7 +36,7 @@ function newConnection(){
 function drawOtherMouse(data){
   fill(data.color);
   noStroke()
-  ellipse(data.x,data.y, 20)
+  square(data.x,data.y, 20)
 }
 
 function preload(){
@@ -58,7 +58,7 @@ function mouseMoved(){
   push()
   noStroke()
   fill(myColor);
-  square(mouseX,mouseY, 20);
+  square(5*ceil(mouseX/5),5*ceil(mouseY/5), 10);
   pop()
 
   let message= {
