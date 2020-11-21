@@ -54,8 +54,7 @@ function draw() {
   // put drawing code here
 }
 
-function mouseMoved(){
-  if(mouseIsPressed){
+function mouseDragged(){
   push()
   noStroke()
   fill(myColor);
@@ -69,5 +68,5 @@ function mouseMoved(){
 };
 
 socket.emit("mouse", message);
-}
+
 }
