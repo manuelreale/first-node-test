@@ -45,7 +45,7 @@ function preload(){
 }
 
 function setup() {
-  let padding= 5;
+  let padding= 2;
   createCanvas(windowWidth,windowHeight)
   // put setup code here
   background('white')
