@@ -51,8 +51,8 @@ function setup() {
 
 
   button = createButton("");
-  button.mousePressed(myColor= "#000000")
-  button.position(50, height-50);
+  button.mousePressed(color1)
+  button.position(50+25, height-50-25);
   button.size(25,25);
   button.style("background-color", "#000000");
 
@@ -63,12 +63,14 @@ function draw() {
   noStroke()
   rectMode(CORNER)
   fill(myColor)
-  square(0,height-50,50)
+  square(0+25,height-50-25,50)
   pop()
   // put drawing code here
 }
 
-
+function color1(){
+  myColor= "#000000"
+}
 
 function mouseDragged(){
   push()
