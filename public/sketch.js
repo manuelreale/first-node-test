@@ -74,6 +74,42 @@ function setup() {
   button.size(25,25);
   button.style("background-color", "#C1BEC2");
 
+  button = createButton("");
+  button.mousePressed(color5)
+  button.position(50+25*3, height-75);
+  button.size(25,25);
+  button.style("background-color", "#800202");
+
+  button = createButton("");
+  button.mousePressed(color6)
+  button.position(50+25*3, height-50);
+  button.size(25,25);
+  button.style("background-color", "#FB0204");
+
+  button = createButton("");
+  button.mousePressed(color7)
+  button.position(50+25*4, height-75);
+  button.size(25,25);
+  button.style("background-color", "#7D8004");
+
+  button = createButton("");
+  button.mousePressed(color8)
+  button.position(50+25*4, height-50);
+  button.size(25,25);
+  button.style("background-color", "#FEFE04");
+
+  button = createButton("");
+  button.mousePressed(color9)
+  button.position(50+25*5, height-75);
+  button.size(25,25);
+  button.style("background-color", "#018004");
+
+  button = createButton("");
+  button.mousePressed(color10)
+  button.position(50+25*5, height-50);
+  button.size(25,25);
+  button.style("background-color", "#02FE02");
+
 }
 
 function draw() {
@@ -86,20 +122,44 @@ function draw() {
   // put drawing code here
 }
 
-function color1(){
-  myColor= "#000000"
+function color8(){
+  myColor= "#02FE02"
 }
 
-function color2(){
-  myColor= "#ffffff"
+function color7(){
+  myColor= "#018004"
+}
+
+function color8(){
+  myColor= "#FEFE04"
+}
+
+function color7(){
+  myColor= "#7D8004"
+}
+
+function color6(){
+  myColor= "#FB0204"
+}
+
+function color5(){
+  myColor= "#800202"
+}
+
+function color4(){
+  myColor= "#C1BEC2"
 }
 
 function color3(){
   myColor= "#808080"
 }
 
-function color4(){
-  myColor= "#C1BEC2"
+function color2(){
+  myColor= "#ffffff"
+}
+
+function color1(){
+  myColor= "#000000"
 }
 
 function mouseDragged(){
