@@ -218,6 +218,10 @@ function setup() {
   button.size(25,25);
   button.style("background-color", "#FD7F42");
 
+  imagec = createImg('./assets/colors.png');
+  imagec.position(25, height-75);
+
+
 }
 
 function draw() {
