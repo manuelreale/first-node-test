@@ -65,13 +65,13 @@ function setup() {
 
   button = createButton("");
   button.mousePressed(color3)
-  button.position(50+(25+padding)+25, height-75);
+  button.position(50+(25+padding)*2, height-75);
   button.size(25,25);
   button.style("background-color", "#808080");
 
   button = createButton("");
   button.mousePressed(color4)
-  button.position(50+(25+padding)+25, height-50+padding);
+  button.position(50+(25+padding)*2, height-50+padding);
   button.size(25,25);
   button.style("background-color", "#C1BEC2");
 
