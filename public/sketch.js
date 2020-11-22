@@ -48,6 +48,11 @@ function setup() {
   createCanvas(windowWidth,windowHeight)
   // put setup code here
   background('white')
+
+  button = createButton('red');
+  button.position(0+50, height-50);
+  button.mousePressed(changeColor);
+
 }
 
 function draw() {
@@ -58,6 +63,10 @@ function draw() {
   square(0,height-50,50)
   pop()
   // put drawing code here
+}
+
+function changeColor(){
+  myColor= "#ff0000"
 }
 
 function mouseDragged(){
