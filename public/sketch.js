@@ -56,6 +56,24 @@ function setup() {
   button.size(25,25);
   button.style("background-color", "#000000");
 
+  button = createButton("");
+  button.mousePressed(color2)
+  button.position(50+25, height-25-25);
+  button.size(25,25);
+  button.style("background-color", "#ffffff");
+
+  button = createButton("");
+  button.mousePressed(color3)
+  button.position(50+25+25, height-50-25);
+  button.size(25,25);
+  button.style("background-color", "#808080");
+
+  button = createButton("");
+  button.mousePressed(color4)
+  button.position(50+25+25, height-25-25);
+  button.size(25,25);
+  button.style("background-color", "#C1BEC2");
+
 }
 
 function draw() {
@@ -70,6 +88,18 @@ function draw() {
 
 function color1(){
   myColor= "#000000"
+}
+
+function color2(){
+  myColor= "#ffffff"
+}
+
+function color3(){
+  myColor= "#808080"
+}
+
+function color4(){
+  myColor= "#C1BEC2"
 }
 
 function mouseDragged(){
