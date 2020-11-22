@@ -146,6 +146,78 @@ function setup() {
   button.size(25,25);
   button.style("background-color", "#FF01FD");
 
+  button = createButton("");
+  button.mousePressed(color17)
+  button.position(50+25*9, height-75);
+  button.size(25,25);
+  button.style("background-color", "#7F7F3F");
+
+  button = createButton("");
+  button.mousePressed(color18)
+  button.position(50+25*9, height-50);
+  button.size(25,25);
+  button.style("background-color", "#FCFD83");
+
+  button = createButton("");
+  button.mousePressed(color19)
+  button.position(50+25*10, height-75);
+  button.size(25,25);
+  button.style("background-color", "#063E3F");
+
+  button = createButton("");
+  button.mousePressed(color20)
+  button.position(50+25*10, height-50);
+  button.size(25,25);
+  button.style("background-color", "#02FD81");
+
+  button = createButton("");
+  button.mousePressed(color21)
+  button.position(50+25*11, height-75);
+  button.size(25,25);
+  button.style("background-color", "#037EFC");
+
+  button = createButton("");
+  button.mousePressed(color22)
+  button.position(50+25*11, height-50);
+  button.size(25,25);
+  button.style("background-color", "#81FEFD");
+
+  button = createButton("");
+  button.mousePressed(color23)
+  button.position(50+25*12, height-75);
+  button.size(25,25);
+  button.style("background-color", "#034081");
+
+  button = createButton("");
+  button.mousePressed(color24)
+  button.position(50+25*12, height-50);
+  button.size(25,25);
+  button.style("background-color", "#7F81FA");
+
+  button = createButton("");
+  button.mousePressed(color25)
+  button.position(50+25*13, height-75);
+  button.size(25,25);
+  button.style("background-color", "#4001FD");
+
+  button = createButton("");
+  button.mousePressed(color26)
+  button.position(50+25*13, height-50);
+  button.size(25,25);
+  button.style("background-color", "#FB0181");
+
+  button = createButton("");
+  button.mousePressed(color27)
+  button.position(50+25*14, height-75);
+  button.size(25,25);
+  button.style("background-color", "#7F4005");
+
+  button = createButton("");
+  button.mousePressed(color28)
+  button.position(50+25*14, height-50);
+  button.size(25,25);
+  button.style("background-color", "#FD7F42");
+
 }
 
 function draw() {
@@ -156,6 +228,54 @@ function draw() {
   square(0+25,height-50-25,50)
   pop()
   // put drawing code here
+}
+
+function color28(){
+  myColor= "#FD7F42"
+}
+
+function color27(){
+  myColor= "#7F4005"
+}
+
+function color26(){
+  myColor= "#FB0181"
+}
+
+function color25(){
+  myColor= "#4001FD"
+}
+
+function color24(){
+  myColor= "#7F81FA"
+}
+
+function color23(){
+  myColor= "#034081"
+}
+
+function color22(){
+  myColor= "#81FEFD"
+}
+
+function color21(){
+  myColor= "#037EFC"
+}
+
+function color20(){
+  myColor= "#02FD81"
+}
+
+function color19(){
+  myColor= "#063E3F"
+}
+
+function color18(){
+  myColor= "#FCFD83"
+}
+
+function color17(){
+  myColor= "#7F7F3F"
 }
 
 function color16(){
