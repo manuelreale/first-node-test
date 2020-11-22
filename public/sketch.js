@@ -40,8 +40,8 @@ function drawOtherMouse(data){
 }
 
 function preload(){
+  img = loadImage('./assets/colors.png');
   // put preload code here
-
 }
 
 function setup() {
@@ -218,9 +218,8 @@ function setup() {
   button.size(25,25);
   button.style("background-color", "#FD7F42");
 
-  imagec = createImg('./assets/colors.png');
-  imagec.position(25, height-75);
 
+image(img,0,height-50)
 
 }
 
