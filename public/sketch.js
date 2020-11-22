@@ -50,6 +50,8 @@ function setup() {
   // put setup code here
   background('white')
 
+  push()
+  translate(100, -300);
 
   button = createButton("");
   button.mousePressed(color1)
@@ -219,8 +221,10 @@ function setup() {
   button.size(25,25);
   button.style("background-color", "#FD7F42");
 
+  pop()
 
-image(img,0,height-50)
+
+//image(img,0,height-50)
 
 }
 
