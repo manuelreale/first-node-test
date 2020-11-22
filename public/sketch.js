@@ -49,9 +49,12 @@ function setup() {
   // put setup code here
   background('white')
 
-  button = createButton('red');
-  button.position(0+50, height-50);
-  button.mousePressed(changeColor);
+
+  button = createButton("");
+  button.mousePressed(myColor= "#000000")
+  button.position(50, height-50);
+  button.size(25,25);
+  button.style("background-color", "#000000");
 
 }
 
@@ -65,9 +68,7 @@ function draw() {
   // put drawing code here
 }
 
-function changeColor(){
-  myColor= "#ff0000"
-}
+
 
 function mouseDragged(){
   push()
