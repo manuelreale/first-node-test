@@ -104,6 +104,16 @@ windowpaint.style("pointer-events", "none")
 
     translate(windowWidth, windowHeight/2);
 
+    button = createButton("o");
+    button.mousePressed(size1)
+    button.position(posX+50+(25+padding), posY-200);
+    button.size(25,25);
+
+    button = createButton("O");
+    button.mousePressed(size2)
+    button.position(posX+50+(25+padding), posY-300);
+    button.size(25,25);
+
     button = createButton("");
     button.mousePressed(color1)
     button.position(posX+50+(25+padding), posY-75);
@@ -275,7 +285,19 @@ windowpaint.style("pointer-events", "none")
 
 }
 
+function size1(){
+  let size=0;
+  return size;
+}
+
+function size2(){
+  let size=1;
+  return size;
+}
+
 function colorPickerSet(){
+
+
 
   myColor= colPic.value()
   //console.log(myColor)
