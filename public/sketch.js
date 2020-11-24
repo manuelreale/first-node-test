@@ -1,6 +1,7 @@
 let socket= io();
 let myColor ='black';
 let pixelSize = 7
+let scl=0.8
 
 
 socket.on('connect', newConnection);
@@ -56,7 +57,7 @@ function centerCanvas() {
 }
 
 function setup() {
-  cnv = createCanvas(1200, 800);
+  cnv = createCanvas(1200*scl, 800*scl);
   centerCanvas();
 
   // put setup code here
@@ -84,6 +85,7 @@ function createButtons(){
 windowpaint= createImg("./assets/paintwindow.png")
 windowpaint.position((windowWidth/2)-(width/2)-126, (windowHeight/2)-(height/2)-53-30)
 windowpaint.style("pointer-events", "none")
+windowpaint.size(1338*scl,1009*scl);
 
 
   colPic = createColorPicker(myColor);
