@@ -1,5 +1,4 @@
 let socket= io();
-let myColor ='black';
 let pixelSize = 7
 
 
@@ -25,6 +24,16 @@ function newPlayer(newPlayerColor){
 //   text('New player joined: '+ newPlayerColor, width/2,height/2)
 //   pop()
 }
+
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;}
+
+  let myColor = getRandomColor();
 
 function setColor(assignedColor){
   //myColor=assignedColor;
