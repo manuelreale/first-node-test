@@ -44,9 +44,21 @@ function preload(){
   // put preload code here
 }
 
+var cnv;
+
+function centerCanvas() {
+  var x = (windowWidth - width) / 2;
+  var y = (windowHeight - height) / 2;
+  cnv.position(x, y);
+}
+
 function setup() {
+  cnv = createCanvas(700, 500);
+  centerCanvas();
+
+
   let padding= 2;
-  createCanvas(windowWidth,windowHeight)
+
   // put setup code here
   background('white')
 
@@ -379,4 +391,8 @@ function mouseClicked(){
   color: myColor,
 };
 socket.emit("mouse", message);
+}
+
+function windowResized() {
+  centerCanvas();
 }
