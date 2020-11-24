@@ -80,7 +80,7 @@ removeElements()
   translate(windowWidth, windowHeight/2);
 
   colPic = createColorPicker("green");
-  colorPic.position(posX+padding, posY-75);
+  colPic.position(posX+padding, posY-75);
   colPic.input(colorPickerSet);
 
 
