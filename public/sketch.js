@@ -98,8 +98,8 @@ windowpaint.style("pointer-events", "none")
   colPic.size(50,50);
 
     let padding= 2;
-    let posX=(windowWidth/2)-(width/2)
-    let posY=(windowHeight/2)+(height/2)+90
+    let posX=(windowWidth/2)-(width/2)-75
+    let posY=(windowHeight/2)+(height/2)+100
 
 
     translate(windowWidth, windowHeight/2);
@@ -278,7 +278,7 @@ windowpaint.style("pointer-events", "none")
 function colorPickerSet(){
 
   myColor= colPic.value()
-  console.log(myColor)
+  //console.log(myColor)
 }
 
 function color28(){
