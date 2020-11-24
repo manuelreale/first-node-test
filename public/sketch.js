@@ -87,13 +87,13 @@ function createButtons(){
   removeElements()
 
 windowpaint= createImg("./assets/paintwindow.png")
-windowpaint.position((windowWidth/2)-(width/2)-126*scl, (windowHeight/2)-(height/2)-83*scala())
+windowpaint.position((windowWidth/2)-(width/2)-126*scala(), (windowHeight/2)-(height/2)-83*scala())
 windowpaint.style("pointer-events", "none")
-windowpaint.size(1338*scl,1009*scl);
+windowpaint.size(1338*scala(),1009*scala());
 
 
   colPic = createColorPicker(myColor);
-  colPic.position((windowWidth/2)-(width/2)-73*scl, (windowHeight/2)+(height/2)-5*scala());
+  colPic.position((windowWidth/2)-(width/2)-73*scala(), (windowHeight/2)+(height/2)-5*scala());
   colPic.input(colorPickerSet);
   colPic.size(50,50);
 
