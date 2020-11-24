@@ -2,6 +2,10 @@ let socket= io();
 let myColor ='black';
 let pixelSize = 7
 
+function scala(){
+  let scl=windowHeight/1920
+  return scl;
+}
 
 
 socket.on('connect', newConnection);
@@ -51,15 +55,13 @@ function preload(){
 var cnv;
 
 function centerCanvas() {
-  let scl=windowHeight/1920
   var x = ((windowWidth - width) / 2);
-  var y = ((windowHeight - height) / 2)-30*scl;
+  var y = ((windowHeight - height) / 2)-30*scala();
   cnv.position(x, y);
 }
 
 function setup() {
-  let scl=windowHeight/1920
-  cnv = createCanvas(1200*scl, 800*scl);
+  cnv = createCanvas(1200*scala(), 800*scala());
   centerCanvas();
 
   // put setup code here
@@ -82,23 +84,22 @@ function draw() {
 }
 
 function createButtons(){
-  let scl=windowHeight/1920
   removeElements()
 
 windowpaint= createImg("./assets/paintwindow.png")
-windowpaint.position((windowWidth/2)-(width/2)-126*scl, (windowHeight/2)-(height/2)-83*scl)
+windowpaint.position((windowWidth/2)-(width/2)-126*scl, (windowHeight/2)-(height/2)-83*scala())
 windowpaint.style("pointer-events", "none")
 windowpaint.size(1338*scl,1009*scl);
 
 
   colPic = createColorPicker(myColor);
-  colPic.position((windowWidth/2)-(width/2)-73*scl, (windowHeight/2)+(height/2)-5*scl);
+  colPic.position((windowWidth/2)-(width/2)-73*scl, (windowHeight/2)+(height/2)-5*scala());
   colPic.input(colorPickerSet);
   colPic.size(50,50);
 
     let padding= 2;
-    let posX=(windowWidth/2)-(width/2)-75*scl
-    let posY=(windowHeight/2)+(height/2)+70*scl
+    let posX=(windowWidth/2)-(width/2)-75*scala()
+    let posY=(windowHeight/2)+(height/2)+70*scala()
 
 
     translate(windowWidth, windowHeight/2);
@@ -450,9 +451,8 @@ socket.emit("mouse", message);
 }
 
 function windowResized() {
-  let scl=windowHeight/1920
   createButtons()
   centerCanvas();
-  resizeCanvas(1000*scl, 800*scl);
+  //resizeCanvas(1000, 800);
   //background("white")
 }
