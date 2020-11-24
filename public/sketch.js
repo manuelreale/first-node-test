@@ -1,5 +1,6 @@
 let socket= io();
 let myColor ='black';
+let pixelSize = 7
 
 socket.on('connect', newConnection);
 
@@ -36,7 +37,7 @@ function newConnection(){
 function drawOtherMouse(data){
   fill(data.color);
   noStroke()
-  square(5*floor(data.x/5),5*floor(data.y/5), 5)
+  square(pixelSize*floor(data.x/pixelSize),pixelSize*floor(data.y/pixelSize), pixelSize)
 }
 
 function preload(){
@@ -372,7 +373,7 @@ function mouseDragged(){
   push()
   noStroke()
   fill(myColor);
-  square(5*floor(mouseX/5),5*floor(mouseY/5), 5);
+  square(pixelSize*floor(mouseX/pixelSize),pixelSize*floor(mouseY/pixelSize), pixelSize);
   pop()
 
   let message= {
@@ -388,7 +389,7 @@ function mouseClicked(){
   push()
   noStroke()
   fill(myColor);
-  square(5*floor(mouseX/5),5*floor(mouseY/5), 5);
+  square(pixelSize*floor(mouseX/pixelSize),pixelSize*floor(mouseY/pixelSize), pixelSize);
   pop()
 
   let message= {
