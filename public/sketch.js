@@ -1,7 +1,7 @@
 let socket= io();
 let myColor ='black';
 let pixelSize = 7
-var colPic;
+
 
 socket.on('connect', newConnection);
 
