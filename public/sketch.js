@@ -264,7 +264,7 @@ function createButtons(){
 }
 
 function colorPickerSet(){
-  myColor= colorPic.color()
+  myColor= colPic.color()
 }
 
 function color28(){
