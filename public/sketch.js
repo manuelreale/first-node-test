@@ -398,4 +398,7 @@ socket.emit("mouse", message);
 function windowResized() {
   centerCanvas();
   resizeCanvas(1000, 800);
+  background("white")
+  let posX=(windowWidth/2)-(width/2)
+  let posY=(windowHeight/2)+(height/2)
 }
