@@ -53,7 +53,7 @@ function centerCanvas() {
 }
 
 function setup() {
-  cnv = createCanvas(700, 500);
+  cnv = createCanvas(1000, 800);
   centerCanvas();
 
 
@@ -63,7 +63,7 @@ function setup() {
   background('white')
 
   push()
-  translate(100, -300);
+  translate(windowWidth/2, windowHeight/2);
 
   button = createButton("");
   button.mousePressed(color1)
@@ -395,4 +395,5 @@ socket.emit("mouse", message);
 
 function windowResized() {
   centerCanvas();
+  resizeCanvas(windowWidth, windowHeight);
 }
