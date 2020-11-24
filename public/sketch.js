@@ -491,6 +491,20 @@ color: myColor,
 };
 socket.emit("mouse", message);
 
+message= {
+x: mouseX,
+y: mouseY+pixelSize,
+color: myColor,
+};
+socket.emit("mouse", message);
+
+message= {
+x: mouseX,
+y: mouseY-pixelSize,
+color: myColor,
+};
+socket.emit("mouse", message);
+
 
 }
 
