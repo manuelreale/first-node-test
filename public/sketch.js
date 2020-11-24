@@ -82,7 +82,7 @@ function draw() {
 
 function createButtons(){
   removeElements()
-  colPic = createColorPicker("green");
+  colPic = createColorPicker("myColor");
   colPic.position((windowWidth/2)-(width/2)+2, (windowHeight/2)+(height/2)+90-75);
   colPic.input(colorPickerSet);
   colPic.size(50,50);
@@ -270,115 +270,142 @@ function colorPickerSet(){
 
 function color28(){
   myColor= "#FD7F42"
+  createButtons()
 }
 
 function color27(){
   myColor= "#7F4005"
+  createButtons()
 }
 
 function color26(){
   myColor= "#FB0181"
+  createButtons()
 }
 
 function color25(){
   myColor= "#4001FD"
+  createButtons()
 }
 
 function color24(){
   myColor= "#7F81FA"
+  createButtons()
 }
 
 function color23(){
   myColor= "#034081"
+  createButtons()
 }
 
 function color22(){
   myColor= "#81FEFD"
+  createButtons()
 }
 
 function color21(){
   myColor= "#037EFC"
+  createButtons()
 }
 
 function color20(){
   myColor= "#02FD81"
+  createButtons()
 }
 
 function color19(){
   myColor= "#063E3F"
+  createButtons()
 }
 
 function color18(){
   myColor= "#FCFD83"
+  createButtons()
 }
 
 function color17(){
   myColor= "#7F7F3F"
+  createButtons()
 }
 
 function color16(){
   myColor= "#FF01FD"
+  createButtons()
 }
 
 function color15(){
   myColor= "#800180"
+  createButtons()
 }
 
 function color14(){
   myColor= "#0201FB"
+  createButtons()
 }
 
 function color13(){
   myColor= "#010180"
+  createButtons()
 }
 
 function color12(){
   myColor= "#04FCFC"
+  createButtons()
 }
 
 function color11(){
   myColor= "#048181"
+  createButtons()
 }
 
 function color10(){
   myColor= "#02FE02"
+  createButtons()
 }
 
 function color9(){
   myColor= "#018004"
+  createButtons()
 }
 
 function color8(){
   myColor= "#FEFE04"
+  createButtons()
 }
 
 function color7(){
   myColor= "#7D8004"
+  createButtons()
 }
 
 function color6(){
   myColor= "#FB0204"
+  createButtons()
 }
 
 function color5(){
   myColor= "#800202"
+  createButtons()
 }
 
 function color4(){
   myColor= "#C1BEC2"
+  createButtons()
 }
 
 function color3(){
   myColor= "#808080"
+  createButtons()
 }
 
 function color2(){
   myColor= "#ffffff"
+  createButtons()
 }
 
 function color1(){
   myColor= "#000000"
-  colPic.color("#000000")
+  createButtons()
 }
 
 function mouseDragged(){
