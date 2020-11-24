@@ -57,9 +57,7 @@ function setup() {
   centerCanvas();
 
 
-  let padding= 2;
-  let posX=(windowWidth/2)-(width/2)
-  let posY=(windowHeight/2)+(height/2)
+
 
   // put setup code here
   background('white')
@@ -69,6 +67,10 @@ function setup() {
 }
 
 function draw() {
+
+  let padding= 2;
+  let posX=(windowWidth/2)-(width/2)
+  let posY=(windowHeight/2)+(height/2)
 
   push()
   translate(windowWidth, windowHeight/2);
