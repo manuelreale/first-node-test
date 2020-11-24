@@ -1,7 +1,7 @@
 let socket= io();
 let myColor ='black';
 let pixelSize = 7
-let scl=0.8
+let scl=windowHeight/1920
 
 
 socket.on('connect', newConnection);
