@@ -412,7 +412,7 @@ socket.emit("mouse", message);
 
 function windowResized() {
   createButtons()
-  centerCanvas();
-  resizeCanvas(1000, 800);
+  //centerCanvas();
+  //resizeCanvas(1000, 800);
   //background("white")
 }
