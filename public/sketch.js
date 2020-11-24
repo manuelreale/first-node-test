@@ -73,7 +73,7 @@ function setup() {
 }
 
 function draw() {
-
+console.log(windowHeight)
   // push()
   // noStroke()
   // rectMode(CORNER)
