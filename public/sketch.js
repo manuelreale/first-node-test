@@ -279,6 +279,7 @@ function colorPickerSet(){
   var hash = '#';
   hash += hex(colPic.color())
   myColor= hash
+  console.log(myColor)
 }
 
 function color28(){
