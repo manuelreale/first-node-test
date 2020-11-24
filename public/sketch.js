@@ -1,5 +1,4 @@
 let socket= io();
-let myColor ='black';
 let pixelSize = 7
 
 
@@ -29,7 +28,6 @@ function newPlayer(newPlayerColor){
 function setColor(assignedColor){
   myColor=assignedColor;
   createButtons()
-
 }
 
 function newConnection(){
@@ -58,13 +56,9 @@ function centerCanvas() {
 function setup() {
   cnv = createCanvas(1200, 800);
   centerCanvas();
-
   // put setup code here
   background('white')
   createButtons()
-
-  color1()
-
 //image(img,0,height-50)
 
 }
