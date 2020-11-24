@@ -276,9 +276,8 @@ windowpaint.style("pointer-events", "none")
 }
 
 function colorPickerSet(){
-  var hash = '#';
-  hash += colPic.color()
-  myColor= hash
+
+  myColor= colPic.value()
   console.log(myColor)
 }
 
