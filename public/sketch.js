@@ -85,7 +85,7 @@ function createButtons(){
 
 windowpaint= createImg("./assets/paintwindow.png")
 windowpaint.position((windowWidth/2)-(width/2), (windowHeight/2)-(height/2))
-windowpaint.style("pointer-events", none)
+windowpaint.style("pointer-events", "none")
 
 
   colPic = createColorPicker(myColor);
