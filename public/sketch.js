@@ -63,6 +63,8 @@ function setup() {
   background('white')
   createButtons()
 
+  color1()
+
 //image(img,0,height-50)
 
 }
