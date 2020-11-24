@@ -84,7 +84,7 @@ function createButtons(){
   removeElements()
 
 windowpaint= createImg("./assets/paintwindow.png")
-windowpaint.position((windowWidth/2)-(width/2), (windowHeight/2)-(height/2))
+windowpaint.position((windowWidth/2)-(width/2)-126, (windowHeight/2)-(height/2)-53)
 windowpaint.style("pointer-events", "none")
 
 
