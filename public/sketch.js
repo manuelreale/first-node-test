@@ -1,7 +1,7 @@
 let socket= io();
 let myColor ='black';
 let pixelSize = 7
-let scl=windowHeight/1920
+
 
 
 socket.on('connect', newConnection);
@@ -51,12 +51,14 @@ function preload(){
 var cnv;
 
 function centerCanvas() {
+  let scl=windowHeight/1920
   var x = ((windowWidth - width) / 2);
   var y = ((windowHeight - height) / 2)-30*scl;
   cnv.position(x, y);
 }
 
 function setup() {
+  let scl=windowHeight/1920
   cnv = createCanvas(1200*scl, 800*scl);
   centerCanvas();
 
@@ -80,6 +82,7 @@ function draw() {
 }
 
 function createButtons(){
+  let scl=windowHeight/1920
   removeElements()
 
 windowpaint= createImg("./assets/paintwindow.png")
