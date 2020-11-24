@@ -85,6 +85,7 @@ function createButtons(){
   colPic = createColorPicker("green");
   colPic.position((windowWidth/2)-(width/2)+2, (windowHeight/2)+(height/2)+90-75);
   colPic.input(colorPickerSet);
+  colPic.size(50,50);
     let padding= 2;
     let posX=(windowWidth/2)-(width/2)
     let posY=(windowHeight/2)+(height/2)+90
@@ -377,6 +378,7 @@ function color2(){
 
 function color1(){
   myColor= "#000000"
+  colPic.color("#000000")
 }
 
 function mouseDragged(){
