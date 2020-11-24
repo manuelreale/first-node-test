@@ -464,7 +464,10 @@ if(size==1){
   push()
   noStroke()
   fill(myColor);
-  square(pixelSize*floor(mouseX/pixelSize),pixelSize*floor(mouseY/pixelSize), pixelSize*2);
+  square(pixelSize*floor(mouseX/pixelSize)-pixelSize,pixelSize*floor(mouseY/pixelSize), pixelSize);
+  square(pixelSize*floor(mouseX/pixelSize),pixelSize*floor(mouseY/pixelSize), pixelSize);
+  square(pixelSize*floor(mouseX/pixelSize)+pixelSize,pixelSize*floor(mouseY/pixelSize), pixelSize);
+
   pop()
 
   let message= {
