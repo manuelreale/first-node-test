@@ -63,6 +63,9 @@ function setup() {
 
   // put setup code here
   background('white')
+  colPic = createColorPicker("green");
+  button.position(posX+padding, posY-75);
+  colPic.input(colorPickerSet);
 
 //image(img,0,height-50)
 
@@ -248,9 +251,6 @@ removeElements()
   button.style("background-color", "#FD7F42");
 
 
-  colPic = createColorPicker("green");
-  button.position(posX+padding, posY-75);
-  colPic.input(colorPickerSet);
 
   pop()
 
