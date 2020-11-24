@@ -71,17 +71,21 @@ function setup() {
 
 function draw() {
 
-  push()
-  noStroke()
-  rectMode(CORNER)
-  fill(myColor)
-  square(0+25,height-50-25,50)
-  pop()
+  // push()
+  // noStroke()
+  // rectMode(CORNER)
+  // fill(myColor)
+  // square(0+25,height-50-25,50)
+  // pop()
   // put drawing code here
 }
 
 function createButtons(){
   removeElements()
+
+windowpaint= createImg("./assets/paintwindow.png")
+
+
   colPic = createColorPicker(myColor);
   colPic.position((windowWidth/2)-(width/2)+2, (windowHeight/2)+(height/2)+90-75);
   colPic.input(colorPickerSet);
