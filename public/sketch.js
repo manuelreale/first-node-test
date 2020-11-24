@@ -63,15 +63,16 @@ function setup() {
 
   // put setup code here
   background('white')
-  colPic = createColorPicker("green");
-  colPic.position((windowWidth/2)-(width/2)+2, (windowHeight/2)+(height/2)+75-75);
-  colPic.input(colorPickerSet);
 
 //image(img,0,height-50)
 
 }
 
 function draw() {
+
+  colPic = createColorPicker("green");
+  colPic.position((windowWidth/2)-(width/2)+2, (windowHeight/2)+(height/2)+75-75);
+  colPic.input(colorPickerSet);
 
 removeElements()
   let padding= 2;
@@ -80,8 +81,6 @@ removeElements()
 
   push()
   translate(windowWidth, windowHeight/2);
-
-
 
 
   button = createButton("");
