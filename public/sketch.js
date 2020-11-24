@@ -105,17 +105,21 @@ windowpaint.style("pointer-events", "none")
 
     translate(windowWidth, windowHeight/2);
 
-    button = createButton("▪");
-    button.mousePressed(size1)
-    button.position(posX, posY-200);
-    button.size(50,50);
-    button.style("font-size","50px")
-
     button = createButton("●");
     button.mousePressed(size2)
     button.position(posX, posY-300);
     button.size(50,50);
-    button.style("font-size","50px")
+    button.style("font-size","60px")
+    button.style("padding", "0px")
+
+    button = createButton("●");
+    button.mousePressed(size1)
+    button.position(posX, posY-200);
+    button.size(50,50);
+    button.style("font-size","20px")
+    button.style("padding", "0px")
+
+
 
     button = createButton("");
     button.mousePressed(color1)
