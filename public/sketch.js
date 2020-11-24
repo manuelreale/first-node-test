@@ -450,8 +450,9 @@ socket.emit("mouse", message);
 }
 
 function windowResized() {
+  let scl=windowHeight/1920
   createButtons()
   centerCanvas();
-  //resizeCanvas(1000, 800);
+  resizeCanvas(1000*scl, 800*scl);
   //background("white")
 }
