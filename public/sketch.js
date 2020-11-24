@@ -247,6 +247,11 @@ removeElements()
   button.size(25,25);
   button.style("background-color", "#FD7F42");
 
+
+  colPic = createColorPicker("green");
+  button.position(posX+padding, posY-75);
+  colPic.input(colorPickerSet);
+
   pop()
 
 
