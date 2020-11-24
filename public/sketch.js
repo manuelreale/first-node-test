@@ -83,11 +83,11 @@ function draw() {
 function createButtons(){
   removeElements()
   colPic = createColorPicker("green");
-  colPic.position((windowWidth/2)-(width/2)+2, (windowHeight/2)+(height/2)+75-75);
+  colPic.position((windowWidth/2)-(width/2)+2, (windowHeight/2)+(height/2)+90-75);
   colPic.input(colorPickerSet);
     let padding= 2;
     let posX=(windowWidth/2)-(width/2)
-    let posY=(windowHeight/2)+(height/2)+75
+    let posY=(windowHeight/2)+(height/2)+90
 
     push()
     translate(windowWidth, windowHeight/2);
