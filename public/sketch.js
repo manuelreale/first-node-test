@@ -109,11 +109,13 @@ windowpaint.style("pointer-events", "none")
     button.mousePressed(size1)
     button.position(posX, posY-200);
     button.size(50,50);
+    button.style("font-size","20")
 
     button = createButton("●");
     button.mousePressed(size2)
     button.position(posX, posY-300);
     button.size(50,50);
+    button.style("font-size","20")
 
     button = createButton("");
     button.mousePressed(color1)
