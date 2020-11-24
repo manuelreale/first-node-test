@@ -78,10 +78,6 @@ removeElements()
   push()
   translate(windowWidth, windowHeight/2);
 
-  colPic = createColorPicker("green");
-  button.position(posX+padding, posY-75);
-  colPic.input(colorPickerSet);
-
 
   button = createButton("");
   button.mousePressed(color1)
