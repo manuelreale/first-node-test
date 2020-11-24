@@ -93,13 +93,13 @@ windowpaint.style("pointer-events", "none")
 
 
   colPic = createColorPicker(myColor);
-  colPic.position((windowWidth/2)-(width/2)+2-75, (windowHeight/2)+(height/2)+90-75+10);
+  colPic.position((windowWidth/2)-(width/2)+2-100, (windowHeight/2)+(height/2)+90-75+13);
   colPic.input(colorPickerSet);
   colPic.size(50,50);
 
     let padding= 2;
-    let posX=(windowWidth/2)-(width/2)-75
-    let posY=(windowHeight/2)+(height/2)+100
+    let posX=(windowWidth/2)-(width/2)-100
+    let posY=(windowHeight/2)+(height/2)+103
 
 
     translate(windowWidth, windowHeight/2);
