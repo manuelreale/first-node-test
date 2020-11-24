@@ -82,7 +82,7 @@ function draw() {
 
 function createButtons(){
   removeElements()
-  colPic = createColorPicker("myColor");
+  colPic = createColorPicker(myColor);
   colPic.position((windowWidth/2)-(width/2)+2, (windowHeight/2)+(height/2)+90-75);
   colPic.input(colorPickerSet);
   colPic.size(50,50);
