@@ -7,6 +7,12 @@ function scala(){
   return scl;
 }
 
+function pixelscala(){
+  let pixelSize = 7*scala()
+  return pixelSize;
+}
+
+
 
 socket.on('connect', newConnection);
 
@@ -44,7 +50,7 @@ function newConnection(){
 function drawOtherMouse(data){
   fill(data.color);
   noStroke()
-  square(pixelSize*floor(data.x/pixelSize),pixelSize*floor(data.y/pixelSize), pixelSize)
+  square(pixelscala()*floor(data.x/pixelscala()),pixelscala()*floor(data.y/pixelscala()), pixelscala())
 }
 
 function preload(){
@@ -73,7 +79,6 @@ function setup() {
 }
 
 function draw() {
-console.log(windowHeight)
   // push()
   // noStroke()
   // rectMode(CORNER)
@@ -423,7 +428,7 @@ function mouseDragged(){
   push()
   noStroke()
   fill(myColor);
-  square(pixelSize*floor(mouseX/pixelSize),pixelSize*floor(mouseY/pixelSize), pixelSize);
+  square(pixelscala()*floor(mouseX/pixelscala()),pixelscala()*floor(mouseY/pixelscala()), pixelscala());
   pop()
 
   let message= {
@@ -439,7 +444,7 @@ function mouseClicked(){
   push()
   noStroke()
   fill(myColor);
-  square(pixelSize*floor(mouseX/pixelSize),pixelSize*floor(mouseY/pixelSize), pixelSize);
+  square(pixelscala()*floor(mouseX/pixelscala()),pixelscala()*floor(mouseY/pixelscala()), pixelscala());
   pop()
 
   let message= {
