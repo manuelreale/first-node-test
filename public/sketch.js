@@ -63,7 +63,7 @@ function setup() {
   background('white')
 
   push()
-  translate(windowWidth/2, windowHeight/2);
+  translate(windowWidth, windowHeight/2);
 
   button = createButton("");
   button.mousePressed(color1)
