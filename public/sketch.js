@@ -14,16 +14,16 @@ socket.on("newPlayer", newPlayer);
 function newPlayer(newPlayerColor){
   console.log(newPlayerColor)
 
-  fill('white')
-  rectMode(CENTER,CENTER);
-  noStroke()
-  rect(width/2,height/2,400,40)
-push()
-  fill(newPlayerColor)
-  textSize(30);
-  textAlign(CENTER,CENTER)
-  text('New player joined: '+ newPlayerColor, width/2,height/2)
-  pop()
+//   fill('white')
+//   rectMode(CENTER,CENTER);
+//   noStroke()
+//   rect(width/2,height/2,400,40)
+// push()
+//   fill(newPlayerColor)
+//   textSize(30);
+//   textAlign(CENTER,CENTER)
+//   text('New player joined: '+ newPlayerColor, width/2,height/2)
+//   pop()
 }
 
 function setColor(assignedColor){
@@ -50,8 +50,8 @@ function preload(){
 var cnv;
 
 function centerCanvas() {
-  var x = (windowWidth - width) / 2;
-  var y = (windowHeight - height) / 2;
+  var x = ((windowWidth - width) / 2);
+  var y = ((windowHeight - height) / 2)-200;
   cnv.position(x, y);
 }
 
@@ -266,7 +266,7 @@ windowpaint.style("pointer-events", "none")
     button.size(25,25);
     button.style("background-color", "#FD7F42");
 
-    
+
 }
 
 function colorPickerSet(){
