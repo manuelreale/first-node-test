@@ -52,7 +52,7 @@ var cnv;
 
 function centerCanvas() {
   var x = ((windowWidth - width) / 2);
-  var y = ((windowHeight - height) / 2)-30;
+  var y = ((windowHeight - height) / 2)-30*scl;
   cnv.position(x, y);
 }
 
@@ -83,19 +83,19 @@ function createButtons(){
   removeElements()
 
 windowpaint= createImg("./assets/paintwindow.png")
-windowpaint.position((windowWidth/2)-(width/2)-126, (windowHeight/2)-(height/2)-53-30)
+windowpaint.position((windowWidth/2)-(width/2)-126*scl, (windowHeight/2)-(height/2)-83*scl)
 windowpaint.style("pointer-events", "none")
 windowpaint.size(1338*scl,1009*scl);
 
 
   colPic = createColorPicker(myColor);
-  colPic.position((windowWidth/2)-(width/2)+2-75, (windowHeight/2)+(height/2)+90-75-20);
+  colPic.position((windowWidth/2)-(width/2)-73*scl, (windowHeight/2)+(height/2)-5*scl);
   colPic.input(colorPickerSet);
   colPic.size(50,50);
 
     let padding= 2;
-    let posX=(windowWidth/2)-(width/2)-75
-    let posY=(windowHeight/2)+(height/2)+90-20
+    let posX=(windowWidth/2)-(width/2)-75*scl
+    let posY=(windowHeight/2)+(height/2)+70*scl
 
 
     translate(windowWidth, windowHeight/2);
