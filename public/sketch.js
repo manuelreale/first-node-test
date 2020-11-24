@@ -95,7 +95,7 @@ windowpaint.style("pointer-events", "none")
     let posX=(windowWidth/2)-(width/2)
     let posY=(windowHeight/2)+(height/2)+90
 
-    push()
+
     translate(windowWidth, windowHeight/2);
 
     button = createButton("");
@@ -266,7 +266,7 @@ windowpaint.style("pointer-events", "none")
     button.size(25,25);
     button.style("background-color", "#FD7F42");
 
-    pop()
+    
 }
 
 function colorPickerSet(){
