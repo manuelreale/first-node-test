@@ -477,14 +477,14 @@ if(size==1){
 };
 socket.emit("mouse", message);
 
-let message= {
+message= {
 x: mouseX+pixelSize,
 y: mouseY,
 color: myColor,
 };
 socket.emit("mouse", message);
 
-let message= {
+message= {
 x: mouseX-pixelSize,
 y: mouseY,
 color: myColor,
