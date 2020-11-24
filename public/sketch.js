@@ -276,7 +276,7 @@ windowpaint.style("pointer-events", "none")
 }
 
 function colorPickerSet(){
-  myColor= "#" + hex(colPic.color())
+  myColor= hex(colPic.color())
 }
 
 function color28(){
