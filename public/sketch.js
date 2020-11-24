@@ -397,5 +397,5 @@ socket.emit("mouse", message);
 
 function windowResized() {
   centerCanvas();
-  resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas(1000, 800);
 }
