@@ -1,5 +1,6 @@
 let socket= io();
 let pixelSize = 7
+let size = 0
 
 
 socket.on('connect', newConnection);
@@ -286,13 +287,11 @@ windowpaint.style("pointer-events", "none")
 }
 
 function size1(){
-  let size=0;
-  return size;
+  size=0
 }
 
 function size2(){
-  let size=1;
-  return size;
+  size=1
 }
 
 function colorPickerSet(){
@@ -444,6 +443,8 @@ function color1(){
 }
 
 function mouseDragged(){
+
+if(size==0){
   push()
   noStroke()
   fill(myColor);
@@ -456,6 +457,25 @@ function mouseDragged(){
   color: myColor,
 };
 socket.emit("mouse", message);
+}
+
+
+if(size==1){
+  push()
+  noStroke()
+  fill(myColor);
+  square(pixelSize*floor(mouseX/pixelSize),pixelSize*floor(mouseY/pixelSize), pixelSize*2);
+  pop()
+
+  let message= {
+  x: mouseX,
+  y: mouseY,
+  color: myColor,
+};
+socket.emit("mouse", message);
+}
+
+
 }
 
 
