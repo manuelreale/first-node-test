@@ -28,6 +28,7 @@ push()
 
 function setColor(assignedColor){
   myColor=assignedColor;
+  createButtons()
 
 }
 
@@ -57,9 +58,6 @@ function centerCanvas() {
 function setup() {
   cnv = createCanvas(1200, 800);
   centerCanvas();
-
-
-
 
   // put setup code here
   background('white')
@@ -92,6 +90,7 @@ windowpaint.style("pointer-events", "none")
   colPic.position((windowWidth/2)-(width/2)+2, (windowHeight/2)+(height/2)+90-75);
   colPic.input(colorPickerSet);
   colPic.size(50,50);
+
     let padding= 2;
     let posX=(windowWidth/2)-(width/2)
     let posY=(windowHeight/2)+(height/2)+90
