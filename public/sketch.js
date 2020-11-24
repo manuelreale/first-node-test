@@ -277,7 +277,6 @@ windowpaint.style("pointer-events", "none")
 
 function colorPickerSet(){
   myColor= colPic.color()
-  createButtons()
 }
 
 function color28(){
