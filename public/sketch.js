@@ -105,12 +105,12 @@ windowpaint.style("pointer-events", "none")
 
     translate(windowWidth, windowHeight/2);
 
-    button = createButton("o");
+    button = createButton("▪");
     button.mousePressed(size1)
     button.position(posX+50+(25+padding), posY-200);
     button.size(25,25);
 
-    button = createButton("O");
+    button = createButton("●");
     button.mousePressed(size2)
     button.position(posX+50+(25+padding), posY-300);
     button.size(25,25);
@@ -467,6 +467,9 @@ if(size==1){
   square(pixelSize*floor(mouseX/pixelSize)-pixelSize,pixelSize*floor(mouseY/pixelSize), pixelSize);
   square(pixelSize*floor(mouseX/pixelSize),pixelSize*floor(mouseY/pixelSize), pixelSize);
   square(pixelSize*floor(mouseX/pixelSize)+pixelSize,pixelSize*floor(mouseY/pixelSize), pixelSize);
+
+  square(pixelSize*floor(mouseX/pixelSize),pixelSize*floor(mouseY/pixelSize)+pixelSize, pixelSize);
+  square(pixelSize*floor(mouseX/pixelSize),pixelSize*floor(mouseY/pixelSize)-pixelSize, pixelSize);
 
   pop()
 
