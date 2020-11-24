@@ -36,7 +36,7 @@ function newConnection(){
 function drawOtherMouse(data){
   fill(data.color);
   noStroke()
-  square(10*floor(data.x/10),10*floor(data.y/10), 10)
+  square(5*floor(data.x/5),5*floor(data.y/5), 5)
 }
 
 function preload(){
@@ -53,7 +53,7 @@ function centerCanvas() {
 }
 
 function setup() {
-  cnv = createCanvas(1000, 800);
+  cnv = createCanvas(1200, 800);
   centerCanvas();
 
 
@@ -372,7 +372,7 @@ function mouseDragged(){
   push()
   noStroke()
   fill(myColor);
-  square(10*floor(mouseX/10),10*floor(mouseY/10), 10);
+  square(5*floor(mouseX/5),5*floor(mouseY/5), 5);
   pop()
 
   let message= {
@@ -388,7 +388,7 @@ function mouseClicked(){
   push()
   noStroke()
   fill(myColor);
-  square(10*floor(mouseX/10),10*floor(mouseY/10), 10);
+  square(5*floor(mouseX/5),5*floor(mouseY/5), 5);
   pop()
 
   let message= {
