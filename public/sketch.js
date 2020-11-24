@@ -2,17 +2,6 @@ let socket= io();
 let myColor ='black';
 let pixelSize = 7
 
-function scala(){
-  let scl=windowHeight/1920
-  return scl;
-}
-
-function pixelscala(){
-  let pixelSize = 7*scala()
-  return pixelSize;
-}
-
-
 
 socket.on('connect', newConnection);
 
@@ -50,7 +39,7 @@ function newConnection(){
 function drawOtherMouse(data){
   fill(data.color);
   noStroke()
-  square(pixelscala()*floor(data.x/pixelscala()),pixelscala()*floor(data.y/pixelscala()), pixelscala())
+  square(pixelSize*floor(data.x/pixelSize),pixelSize*floor(data.y/pixelSize), pixelSize)
 }
 
 function preload(){
@@ -61,13 +50,13 @@ function preload(){
 var cnv;
 
 function centerCanvas() {
-  var x = ((windowWidth - width) / 2);
-  var y = ((windowHeight - height) / 2)-30*scala();
+  var x = (windowWidth - width) / 2;
+  var y = (windowHeight - height) / 2;
   cnv.position(x, y);
 }
 
 function setup() {
-  cnv = createCanvas(1200*scala(), 800*scala());
+  cnv = createCanvas(1200, 800);
   centerCanvas();
 
   // put setup code here
@@ -79,6 +68,7 @@ function setup() {
 }
 
 function draw() {
+
   // push()
   // noStroke()
   // rectMode(CORNER)
@@ -92,19 +82,18 @@ function createButtons(){
   removeElements()
 
 windowpaint= createImg("./assets/paintwindow.png")
-windowpaint.position((windowWidth/2)-(width/2)-126*scala(), (windowHeight/2)-(height/2)-83*scala())
+windowpaint.position((windowWidth/2)-(width/2)-126, (windowHeight/2)-(height/2)-53)
 windowpaint.style("pointer-events", "none")
-windowpaint.size(1338*scala(),1009*scala());
 
 
   colPic = createColorPicker(myColor);
-  colPic.position((windowWidth/2)-(width/2)-73*scala(), (windowHeight/2)+(height/2)-5*scala());
+  colPic.position((windowWidth/2)-(width/2)+2, (windowHeight/2)+(height/2)+90-75);
   colPic.input(colorPickerSet);
   colPic.size(50,50);
 
     let padding= 2;
-    let posX=(windowWidth/2)-(width/2)-75*scala()
-    let posY=(windowHeight/2)+(height/2)+70*scala()
+    let posX=(windowWidth/2)-(width/2)
+    let posY=(windowHeight/2)+(height/2)+90
 
 
     translate(windowWidth, windowHeight/2);
@@ -428,7 +417,7 @@ function mouseDragged(){
   push()
   noStroke()
   fill(myColor);
-  square(pixelscala()*floor(mouseX/pixelscala()),pixelscala()*floor(mouseY/pixelscala()), pixelscala());
+  square(pixelSize*floor(mouseX/pixelSize),pixelSize*floor(mouseY/pixelSize), pixelSize);
   pop()
 
   let message= {
@@ -444,7 +433,7 @@ function mouseClicked(){
   push()
   noStroke()
   fill(myColor);
-  square(pixelscala()*floor(mouseX/pixelscala()),pixelscala()*floor(mouseY/pixelscala()), pixelscala());
+  square(pixelSize*floor(mouseX/pixelSize),pixelSize*floor(mouseY/pixelSize), pixelSize);
   pop()
 
   let message= {
