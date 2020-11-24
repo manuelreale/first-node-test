@@ -64,6 +64,12 @@ function setup() {
   // put setup code here
   background('white')
 
+//image(img,0,height-50)
+
+}
+
+function draw() {
+
   push()
   translate(windowWidth, windowHeight/2);
 
@@ -238,11 +244,6 @@ function setup() {
   pop()
 
 
-//image(img,0,height-50)
-
-}
-
-function draw() {
   push()
   noStroke()
   rectMode(CORNER)
@@ -399,6 +400,4 @@ function windowResized() {
   centerCanvas();
   resizeCanvas(1000, 800);
   background("white")
-  let posX=(windowWidth/2)-(width/2)
-  let posY=(windowHeight/2)+(height/2)
 }
