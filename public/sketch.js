@@ -70,11 +70,12 @@ function setup() {
 
 function draw() {
 
-  colPic = createColorPicker("green");
-  colPic.position((windowWidth/2)-(width/2)+2, (windowHeight/2)+(height/2)+75-75);
-  colPic.input(colorPickerSet);
+
 
 removeElements()
+colPic = createColorPicker("green");
+colPic.position((windowWidth/2)-(width/2)+2, (windowHeight/2)+(height/2)+75-75);
+colPic.input(colorPickerSet);
   let padding= 2;
   let posX=(windowWidth/2)-(width/2)
   let posY=(windowHeight/2)+(height/2)+75
