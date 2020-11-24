@@ -1,6 +1,7 @@
 let socket= io();
 let myColor ='black';
 let pixelSize = 7
+var colPic;
 
 socket.on('connect', newConnection);
 
@@ -76,6 +77,11 @@ removeElements()
 
   push()
   translate(windowWidth, windowHeight/2);
+
+  colPic = createColorPicker("green");
+  button.position(posX+padding), posY-75);
+  colPic.input(colorPickerSet);
+
 
   button = createButton("");
   button.mousePressed(color1)
@@ -255,6 +261,10 @@ removeElements()
   square(0+25,height-50-25,50)
   pop()
   // put drawing code here
+}
+
+function colorPickerSet(){
+  myColor= colorPic.color()
 }
 
 function color28(){
