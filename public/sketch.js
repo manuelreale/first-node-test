@@ -7,7 +7,7 @@ socket.on('connect', newConnection);
 
 socket.on('mouseBroadcast', drawOtherMouse);
 
-socket.on("color", setColor);
+//socket.on("color", setColor);
 
 socket.on("newPlayer", newPlayer);
 
