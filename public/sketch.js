@@ -27,7 +27,7 @@ function newPlayer(newPlayerColor){
 }
 
 function setColor(assignedColor){
-  myColor=assignedColor;
+  //myColor=assignedColor;
   createButtons()
 }
 
