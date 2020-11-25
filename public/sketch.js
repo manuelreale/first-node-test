@@ -2,7 +2,6 @@ let socket= io();
 let pixelSize = 7
 let size = 0
 
-
 socket.on('connect', newConnection);
 
 socket.on('mouseBroadcast', drawOtherMouse);
@@ -118,7 +117,6 @@ windowpaint.style("pointer-events", "none")
     button.size(50,50);
     button.style("font-size","10px")
     button.style("padding", "5px")
-
 
 
     button = createButton("");
