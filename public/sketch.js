@@ -109,10 +109,10 @@ windowpaint.style("pointer-events", "none")
     button.mousePressed(size2)
     button.position(posX, posY-300);
     button.size(50,50);
-    button.style("font-size","60px")
+    button.style("font-size","20px")
     //button.style("padding", "-20px")
 
-    button = createButton("●");
+    button = createButton("▪");
     button.mousePressed(size1)
     button.position(posX, posY-200);
     button.size(50,50);
