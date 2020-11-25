@@ -107,14 +107,14 @@ windowpaint.style("pointer-events", "none")
 
     button = createButton("●");
     button.mousePressed(size2)
-    button.position(posX+5, posY-600);
+    button.position(posX+5, posY-1000);
     button.size(50,50);
     button.style("font-size","40px")
     button.style("padding", "0px")
 
     button = createButton("●");
     button.mousePressed(size1)
-    button.position(posX+5, posY-500);
+    button.position(posX+5, posY-900);
     button.size(50,50);
     button.style("font-size","10px")
     button.style("padding", "5px")
