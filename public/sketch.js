@@ -25,6 +25,7 @@ function newPlayer(newPlayerColor){
 //   pop()
 }
 
+
 function getRandomColor() {
   var letters = '0123456789ABCDEF';
   var color = '#';

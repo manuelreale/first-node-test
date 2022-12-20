@@ -31,7 +31,7 @@ function mouseMessage(dataReceived){
   console.log(socket.client.id, dataReceived)
   socket.broadcast.emit("mouseBroadcast", dataReceived);
 }
-  
+
 
 }
 
@@ -41,4 +41,5 @@ function getRandomColor() {
   for (var i = 0; i < 6; i++) {
     color += letters[Math.floor(Math.random() * 16)];
   }
+  
   return color;}
