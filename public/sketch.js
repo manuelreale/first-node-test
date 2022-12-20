@@ -417,7 +417,7 @@ function color7(){
 }
 
 function color6(){
-  myColor= "#FB0204"
+  myColor= "#FB0205"
   createButtons()
 }
 
