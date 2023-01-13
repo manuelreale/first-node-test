@@ -52,7 +52,7 @@ function drawOtherMouse(data){
 }
 
 function preload(){
-  img = loadImage('./assets/colors.png');
+  //img = loadImage('./assets/colors.png');
   // put preload code here
 }
 
